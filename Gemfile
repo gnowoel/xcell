@@ -45,3 +45,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'forgery'
 end
+
+group :production do
+  gem 'unicorn'
+  gem 'pg'
+end
