@@ -24,7 +24,7 @@ group :development, :test do
   gem 'forgery'
 end
 
-group :production do
+group :staging, :production do
   gem 'unicorn'
   gem 'pg'
 end
