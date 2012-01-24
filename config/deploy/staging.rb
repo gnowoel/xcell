@@ -4,6 +4,7 @@ ssh_options[:forward_agent] = true
 $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 
+set :rails_env, 'staging'
 set :rvm_ruby_string, '1.9.3@xcell'
 set :user, 'xcell'
 set :domain, 'staging.xcell.me'
