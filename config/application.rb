@@ -55,5 +55,8 @@ module Xcell
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Precompile all but partials
+    config.assets.precompile << /(^[^_]|\/[^_])[^\/]*/
   end
 end
