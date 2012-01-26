@@ -10,8 +10,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="wrapper">
+    <div id="sidebar">
+      <div class="inner">
+        sidebar
+      </div>
+    </div>
+    <div id="content">
+      <div class="inner">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
