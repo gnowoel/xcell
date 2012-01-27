@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Xcell</title>
+  <title>xcell.me</title>
   <%= stylesheet_link_tag 'screen.css', :media => 'screen, projection' %>
   <%= stylesheet_link_tag 'print.css', :media => 'print' %>
   <!--[if lt IE 8]><%= stylesheet_link_tag 'ie.css', :media => 'screen, projection' %><![endif]-->
@@ -10,13 +10,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="header">
+    <div class="logo">
+      <%= link_to "xcell.me", root_path %>
+    </div>
+  </div>
   <div class="wrapper">
-    <div id="sidebar">
+    <div class="sidebar">
       <div class="inner">
-        sidebar
       </div>
     </div>
-    <div id="content">
+    <div class="content">
       <div class="inner">
         <%= yield %>
       </div>

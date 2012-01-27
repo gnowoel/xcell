@@ -1,15 +1,29 @@
-$blueprint_grid_columns: 20;
-$blueprint_grid_width: 40px;
-
-@import "blueprint";
-
 body {
-  background-color: #e7e7e7;
+  background: #4f4f59 url(/images/texture.png);
+}
+
+.header {
+  .logo {
+    a {
+      position: absolute;
+      left: 5%;
+      top: 12px;
+      font-size: 22px;
+      color: #b9b9c6;
+      line-height: 32px;
+      padding: 0 0 0 5px;
+      text-decoration: none;
+      text-transform: lowercase;
+    }
+  }
 }
 
 .wrapper {
-  @include container;
-  margin: 36px auto;
+  position: absolute;
+  left: 5%;
+  top: 56px;
+  right: 5%;
+  bottom: 46px;
   background-color: #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -19,14 +33,28 @@ body {
   box-shadow: 0px 1px 3px #666;
 }
 
-#sidebar {
-  @include column(4);
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-#content {
-  @include column(16, true);
+.content {
+  position:absolute;
+  right: 0;
+  left: 301px;
+  bottom: 0;
+  top: 0;
 }
 
 .inner {
   padding: 12px 20px;
+}
+
+sup {
+  font-size: 9px;
+  color: red;
 }
