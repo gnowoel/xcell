@@ -2,20 +2,30 @@ body {
   background: #4f4f59 url(/images/texture.png);
 }
 
-.header {
-  .logo {
-    a {
-      position: absolute;
-      left: 5%;
-      top: 12px;
-      font-size: 22px;
-      color: #b9b9c6;
-      line-height: 32px;
-      padding: 0 0 0 5px;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-  }
+.header .logo a {
+  position: absolute;
+  left: 5%;
+  top: 12px;
+  font-size: 22px;
+  color: #f9f9f9;
+  line-height: 32px;
+  padding: 0 0 0 5px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.header .user_nav {
+  position: absolute;
+  right: 5%;
+  top: 22px;
+  padding: 0 5px 0 0;
+  font-size: 13px;
+  color: #d9e0e7;
+}
+
+.header .user_nav a {
+  color: #d9e0e7;
+  text-decoration: none;
 }
 
 .wrapper {
