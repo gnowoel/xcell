@@ -9,7 +9,7 @@ set :rvm_ruby_string, '1.9.3@xcell'
 set :user, 'xcell'
 set :domain, 'staging.xcell.me'
 set :application, 'xcell'
-set :repository,  "git://github.com/gnowoel/xcell.git" # "#{user}@#{domain}:git/#{application}.git"
+set :repository, "#{user}@#{domain}:git/#{application}.git" # "git://github.com/gnowoel/xcell.git"
 set :deploy_to, "/home/#{user}/www/#{domain}"
 set :deploy_via, :remote_cache
 set :scm, 'git'
